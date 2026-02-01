@@ -21,16 +21,3 @@ Showcase my frontend projects, describe my services, and provide an easy way to 
 - FAQ accordion (JavaScript)
 - Contact form validation (JavaScript)
 
-## Folder Structure
-
-TIPS
-Performance + polish
-Optimize images
-use .webp where possible
-keep images under ~200–300KB
-Responsive images
-set max-width: 100% for images
-Reduced motion support
-respect prefers-reduced-motion in CSS for animations
-Lazy load images
-loading="lazy" on gallery/project images
