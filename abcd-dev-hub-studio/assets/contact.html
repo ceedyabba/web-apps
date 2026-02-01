@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact AbCd Dev Hub Studio — send a message about your website or frontend project." />
+  <title>AbCd Dev Hub Studio | Contact</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="light">
+  <!-- ===== Shared Header ===== -->
+  <header class="site-header">
+    <a class="logo" href="index.html">AbCd Dev Hub Studio</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+      ☰
+    </button>
+
+    <nav class="nav" id="siteNav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <!-- ===== Page Content ===== -->
+  <main class="page">
+    <section class="section">
+      <div class="section-head">
+        <h1>Contact</h1>
+        <p class="muted">Send a message. I’ll reply as soon as possible.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="card contact-card">
+          <h2>Message Form</h2>
+
+          <form id="contactForm" novalidate>
+            <label class="field-wrap">
+              Full Name
+              <input id="fullName" type="text" class="input" placeholder="Your name" />
+              <small class="err" id="nameErr"></small>
+            </label>
+
+            <label class="field-wrap">
+              Email
+              <input id="email" type="text" class="input" placeholder="name@example.com" />
+              <small class="err" id="emailErr"></small>
+            </label>
+
+            <label class="field-wrap">
+              Subject
+              <input id="subject" type="text" class="input" placeholder="What is it about?" />
+              <small class="err" id="subjectErr"></small>
+            </label>
+
+            <label class="field-wrap">
+              Message
+              <textarea id="message" class="input textarea" rows="5" placeholder="Write your message..."></textarea>
+              <small class="err" id="messageErr"></small>
+            </label>
+
+            <button type="submit" class="btn primary">Send Message</button>
+
+            <p class="success" id="formSuccess" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="card contact-card">
+          <h2>Quick Info</h2>
+          <p class="muted">
+            You can reach me with the form. Add your handles later when you’re ready.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-row">
+              <span class="info-label">Email</span>
+              <span class="info-value muted">abcd@gmail.com</span>
+            </div>
+
+            <div class="info-row">
+              <span class="info-label">Location</span>
+              <span class="info-value muted">Nigeria</span>
+            </div>
+
+            <div class="info-row">
+              <span class="info-label">Availability</span>
+              <span class="info-value muted">Weekdays</span>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <p class="muted">
+              Thank you for contacting AbCd Dev Hub Studio
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared Footer ===== -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> AbCd Dev Hub Studio. All rights reserved.</p>
+  </footer>
+
+  <!-- Option 2 scripts -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</body>
+</html>

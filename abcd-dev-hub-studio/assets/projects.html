@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by AbCd Dev Hub Studio — frontend work, UI components, and mini apps." />
+  <title>AbCd Dev Hub Studio | Projects</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="light">
+  <!-- ===== Shared Header ===== -->
+  <header class="site-header">
+    <a class="logo" href="index.html">AbCd Dev Hub Studio</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+      ☰
+    </button>
+
+    <nav class="nav" id="siteNav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <!-- ===== Page Content ===== -->
+  <main class="page">
+    <section class="section">
+      <div class="section-head">
+        <h1>Projects</h1>
+        <p class="muted">A few things I’ve built while learning and practicing frontend development.</p>
+      </div>
+
+      <!-- Filters (optional, you can make it interactive later) -->
+      <div class="project-filters" role="group" aria-label="Project filters">
+        <button class="btn small filter-btn active" type="button" data-filter="all">All</button>
+        <button class="btn small filter-btn" type="button" data-filter="html">HTML</button>
+        <button class="btn small filter-btn" type="button" data-filter="css">CSS</button>
+        <button class="btn small filter-btn" type="button" data-filter="js">JavaScript</button>
+      </div>
+
+      <div class="cards project-grid" id="projectGrid">
+        <!-- Project 1 -->
+        <article class="card project-card" data-tags="html css">
+          <div class="project-top">
+            <h3>Responsive Landing Page</h3>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <p class="muted">
+            A clean landing page with hero section, features, and responsive layout using Flexbox/Grid.
+          </p>
+          <div class="card-actions">
+            <a class="btn small ghost" href="#" aria-label="View project">Preview</a>
+            <a class="btn small primary" href="#" aria-label="View source code">Code</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project-card" data-tags="html css js">
+          <div class="project-top">
+            <h3>Student Utility Dashboard</h3>
+            <span class="tag">JS</span>
+            <span class="tag">DOM</span>
+            <span class="tag">UI</span>
+          </div>
+          <p class="muted">
+            Theme toggle, counter, FAQ accordion, and custom form validation using JavaScript.
+          </p>
+          <div class="card-actions">
+            <a class="btn small ghost" href="#" aria-label="View project">Preview</a>
+            <a class="btn small primary" href="#" aria-label="View source code">Code</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card project-card" data-tags="css">
+          <div class="project-top">
+            <h3>Quotes Generator</h3>
+            <span class="tag">Animations</span>
+            <span class="tag">Transitions</span>
+          </div>
+          <p class="muted">
+            A mini showcase of hover effects, keyframes, and simple motion patterns.
+          </p>
+          <div class="card-actions">
+            <a class="btn small ghost" href="#" aria-label="View project">Preview</a>
+            <a class="btn small primary" href="#" aria-label="View source code">Code</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card project-card" data-tags="js">
+          <div class="project-top">
+            <h3>Form Validation Kit</h3>
+            <span class="tag">Validation</span>
+            <span class="tag">Regex</span>
+          </div>
+          <p class="muted">
+            Custom validation for name, email, and password with helpful error messages.
+          </p>
+          <div class="card-actions">
+            <a class="btn small ghost" href="#" aria-label="View project">Preview</a>
+            <a class="btn small primary" href="#" aria-label="View source code">Code</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="muted projects-note">
+        Tip: Replace “Preview” and “Code” links with your real GitHub repo and live demo links later.
+      </p>
+    </section>
+
+    <section class="cta">
+      <div class="cta-inner">
+        <h2>Need a simple website?</h2>
+        <p class="muted">I can build clean multi-page sites with responsive layout and basic interactivity.</p>
+        <a class="btn primary" href="services.html">See Services</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared Footer ===== -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> AbCd Dev Hub Studio. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/projects.js" defer></script>
+</body>
+</html>
