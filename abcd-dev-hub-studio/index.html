@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AbCd Dev Hub Studio — Frontend portfolio & services." />
+  <title>AbCd Dev Hub Studio | Home</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- ===== Shared Header ===== -->
+  <header class="site-header">
+    <a class="logo" href="index.html">AbCd Dev Hub Studio</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+      ☰
+    </button>
+
+    <nav class="nav" id="siteNav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <!-- ===== Page Content ===== -->
+  <main class="page">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="kicker">Frontend Developer</p>
+        <h1>Build clean, responsive websites with HTML, CSS & JavaScript.</h1>
+        <p class="lead">
+          Welcome to AbCd Dev Hub Studio. I create simple, fast websites and interactive UI features.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="projects.html">View Projects</a>
+          <a class="btn ghost" href="contact.html">Contact Me</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Quick highlights">
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Mini Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">HTML</span>
+            <span class="stat-label">Semantic Layout</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">JS</span>
+            <span class="stat-label">Interactive UI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Quick intro card">
+        <h2>What I do</h2>
+        <ul class="checklist">
+          <li>Landing pages and portfolios</li>
+          <li>Responsive layouts (mobile-first)</li>
+          <li>JavaScript interactivity (menus, filters, validation)</li>
+          <li>Clean structure and organized code</li>
+        </ul>
+        <a class="link" href="services.html">See services →</a>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
+        <p class="muted">A few builds from my training.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Student Utility Dashboard</h3>
+          <p class="muted">Event handling, DOM updates, theme toggle, FAQ, and form validation.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="projects.html">View</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Mini Interaction Lab</h3>
+          <p class="muted">CSS animations + JavaScript functions + JS-triggered effects.</p>
+          <div class="tags">
+            <span class="tag">Animations</span><span class="tag">Functions</span><span class="tag">UI</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="projects.html">View</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Mini E-Learning Prototype</h3>
+          <p class="muted">Course listing, progress tracking UI, and clean layout design.</p>
+          <div class="tags">
+            <span class="tag">UI</span><span class="tag">Layout</span><span class="tag">JS</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="projects.html">View</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="section-foot">
+        <a class="btn ghost" href="projects.html">See all projects</a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">Tools I use to build modern frontend pages.</p>
+      </div>
+
+      <div class="skill-grid" aria-label="Skill list">
+        <div class="skill">
+          <h3>HTML5</h3>
+          <p class="muted">Semantic structure, accessible forms, clean layout.</p>
+        </div>
+        <div class="skill">
+          <h3>CSS3</h3>
+          <p class="muted">Responsive design, transitions, keyframe animations.</p>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <p class="muted">DOM manipulation, events, validation, localStorage.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta-inner">
+        <h2>Need a simple website or UI help?</h2>
+        <p class="muted">Let’s build something clean, responsive, and easy to maintain.</p>
+        <a class="btn primary" href="contact.html">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared Footer ===== -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> AbCd Dev Hub Studio. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
